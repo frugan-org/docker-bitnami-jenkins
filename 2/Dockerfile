@@ -13,4 +13,4 @@ RUN install_packages \
 ####
 
 # Revert to the original non-root user
-USER 1000
+USER 1001
