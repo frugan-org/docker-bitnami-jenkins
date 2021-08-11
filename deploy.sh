@@ -11,7 +11,7 @@ deploy() {
 }
 
 TAGS=(
-  'latest'
+  2
 )
 
 ENTRYPOINT=entrypoint.sh
