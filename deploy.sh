@@ -11,7 +11,6 @@ deploy() {
 }
 
 TAGS=(
-  2
   'latest'
 )
 
