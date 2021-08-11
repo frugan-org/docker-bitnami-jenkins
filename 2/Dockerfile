@@ -7,6 +7,7 @@ USER 0
 
 RUN install_packages \
         git-ftp \
+        openssh-client \
     ;
 
 
