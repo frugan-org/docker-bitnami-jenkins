@@ -5,8 +5,11 @@ FROM bitnami/jenkins:%%TAG%%
 USER 0
 
 
-RUN install_packages \
+RUN echo "ssh:x:1:" >> ${NSS_WRAPPER_GROUP}; \
+    \
+    install_packages \
         git-ftp \
+        openssh-client \
     ;
 
 
