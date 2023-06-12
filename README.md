@@ -2,7 +2,7 @@
 
 # Docker Bitnami Jenkins
 
-Customization of the [Bitnami Jenkins Docker image](https://github.com/bitnami/bitnami-docker-jenkins) with integration of:
+Customization of the [Bitnami Jenkins Docker image](https://github.com/bitnami/containers/tree/main/bitnami/jenkins) with integration of:
 
 - [Git-ftp](https://github.com/git-ftp/git-ftp)
 
@@ -31,5 +31,5 @@ https://github.com/KristinitaTest/KristinitaTest.github.io/blob/master/donate/Bi
 
 ### License
 
-(ɔ) Copyleft 2021 [Frugan](https://about.me/frugan)
+(ɔ) Copyleft 2023 [Frugan](https://frugan.it)
 [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/), see [COPYING](COPYING) file.
