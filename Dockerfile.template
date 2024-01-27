@@ -5,12 +5,17 @@ FROM bitnami/jenkins:%%TAG%%
 USER 0
 
 
-RUN echo "ssh:x:1:" >> ${NSS_WRAPPER_GROUP}; \
-    \
-    install_packages \
-        git-ftp \
-        openssh-client \
-    ;
+#https://vsupalov.com/docker-arg-vs-env/
+ARG NSS_WRAPPER_GROUP
+
+RUN if [ ! -z "${NSS_WRAPPER_GROUP:-}" ]; then \
+        echo "ssh:x:1:" >> ${NSS_WRAPPER_GROUP}; \
+        \
+        install_packages \
+            git-ftp \
+            openssh-client \
+        ; \
+    fi
 
 
 ####
